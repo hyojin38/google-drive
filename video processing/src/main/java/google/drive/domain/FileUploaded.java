@@ -6,7 +6,7 @@ import lombok.*;
 import java.util.*;
 @Data
 @ToString
-public class FIleUploaded extends AbstractEvent {
+public class FileUploaded extends AbstractEvent {
 
     private Long id;
     private String name;

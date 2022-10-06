@@ -23,11 +23,11 @@ public class PolicyHandler{
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString){}
 
-    @StreamListener(value=KafkaProcessor.INPUT, condition="headers['type']=='FIleUploaded'")
-    public void wheneverFIleUploaded_ProcessVideo(@Payload FIleUploaded fIleUploaded){
+    @StreamListener(value=KafkaProcessor.INPUT, condition="headers['type']=='FileUploaded'")
+    public void wheneverFileUploaded_ProcessVideo(@Payload FileUploaded fileUploaded){
 
-        FIleUploaded event = fIleUploaded;
-        System.out.println("\n\n##### listener ProcessVideo : " + fIleUploaded + "\n\n");
+        FileUploaded event = fileUploaded;
+        System.out.println("\n\n##### listener ProcessVideo : " + fileUploaded + "\n\n");
 
 
         

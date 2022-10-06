@@ -40,7 +40,7 @@ public class Index  {
 
 
 
-    public static void makeIndex(FIleUploaded fIleUploaded){
+    public static void makeIndex(FileUploaded fileUploaded){
 
         /** Example 1:  new item 
         Index index = new Index();
@@ -52,7 +52,7 @@ public class Index  {
 
         /** Example 2:  finding and process
         
-        repository().findById(fIleUploaded.get???()).ifPresent(index->{
+        repository().findById(fileUploaded.get???()).ifPresent(index->{
             
             index // do something
             repository().save(index);

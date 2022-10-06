@@ -1,6 +1,6 @@
 package google.drive.domain;
 
-import google.drive.domain.FIleUploaded;
+import google.drive.domain.FileUploaded;
 import google.drive.DriveApplication;
 import javax.persistence.*;
 import java.util.List;
@@ -45,8 +45,8 @@ public class File  {
     public void onPostPersist(){
 
 
-        FIleUploaded fIleUploaded = new FIleUploaded(this);
-        fIleUploaded.publishAfterCommit();
+        FileUploaded fileUploaded = new FileUploaded(this);
+        fileUploaded.publishAfterCommit();
 
     }
 

@@ -43,7 +43,7 @@ public class Video  {
 
 
 
-    public static void processVideo(FIleUploaded fIleUploaded){
+    public static void processVideo(FileUploaded fileUploaded){
 
         /** Example 1:  new item 
         Video video = new Video();
@@ -55,7 +55,7 @@ public class Video  {
 
         /** Example 2:  finding and process
         
-        repository().findById(fIleUploaded.get???()).ifPresent(video->{
+        repository().findById(fileUploaded.get???()).ifPresent(video->{
             
             video // do something
             repository().save(video);
