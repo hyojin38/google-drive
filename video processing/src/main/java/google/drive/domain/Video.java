@@ -21,6 +21,18 @@ public class Video  {
     
     
     private Long id;
+    
+    
+    
+    
+    
+    private String videoUrl;
+    
+    
+    
+    
+    
+    private Long fildId;
 
 
     public static VideoRepository repository(){

@@ -39,7 +39,7 @@ public class File  {
     
     
     
-    private String size;
+    private Long size;
 
     @PostPersist
     public void onPostPersist(){

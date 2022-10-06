@@ -12,7 +12,7 @@
                 <String label="Type" v-model="item.type" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="Size" v-model="item.size" :editMode="editMode" @change="change" />
+                <Number label="Size" v-model="item.size" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 
